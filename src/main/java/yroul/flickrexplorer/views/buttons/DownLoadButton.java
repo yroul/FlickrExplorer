@@ -19,6 +19,7 @@ import yroul.flickrexplorer.core.*;
  */
 public class DownLoadButton extends AbstractCustomButton {
 
+	private static final long serialVersionUID = 5068739732855407870L;
 	private String imageId;
 	/**
 	 * Constructor

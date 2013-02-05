@@ -18,7 +18,6 @@ import java.util.Set;
 public class FlickrApiConnectionProvider {
 
 	private final String apiKey;
-	private final String format;
 	private final String flickrAPIURL;
 	
 	/**
@@ -27,10 +26,9 @@ public class FlickrApiConnectionProvider {
 	 * @param format response format (only json allowed yet)
 	 * @param flickrAPIURL flickr api url
 	 */
-	public FlickrApiConnectionProvider(String apiKey, String format,String flickrAPIURL) {
+	public FlickrApiConnectionProvider(String apiKey,String flickrAPIURL) {
 		super();
 		this.apiKey = apiKey;
-		this.format = format;
 		this.flickrAPIURL = flickrAPIURL;
 	}
 	/**
@@ -38,10 +36,9 @@ public class FlickrApiConnectionProvider {
 	 * @param apiKey applciation key
 	 * @param format response format (only json allowed yet)
 	 */
-	public FlickrApiConnectionProvider(String apiKey, String format) {
+	public FlickrApiConnectionProvider(String apiKey) {
 		super();
 		this.apiKey = apiKey;
-		this.format = format;
 		this.flickrAPIURL = "http://api.flickr.com/services/rest/";
 	}
 	

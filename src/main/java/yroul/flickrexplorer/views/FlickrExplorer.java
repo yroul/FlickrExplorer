@@ -66,7 +66,6 @@ public class FlickrExplorer implements ActionListener,MouseListener,KeyListener 
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
-		System.out.println("Run");
 		String toSearch;
 		try{
 			toSearch = args[0];

@@ -1,7 +1,6 @@
 package yroul.flickrexplorer.views;
 
 
-import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
@@ -22,6 +21,8 @@ import javax.swing.JLabel;
  */
 public class ImageLabel extends JLabel implements ActionListener {
 
+	
+	private static final long serialVersionUID = -4257281394875681367L;
 	private BufferedImage image = null;
 	private String imageId;
 	private final static Logger LOGGER = Logger.getLogger(ImageLabel.class.getName());
@@ -41,12 +42,10 @@ public class ImageLabel extends JLabel implements ActionListener {
         	 
         	
         	 try {
-				image = ImageIO.read(getClass().getClassLoader().getResource("images/placeHolder.jpg"));
+				image = ImageIO.read(new URL("http://l.yimg.com/g/images/photo_unavailable.gif"));
 				this.setIcon(new ImageIcon(image));
 				LOGGER.info("Place holder correctement ajouté");
 			} catch (IOException e1) {
-				// TODO Auto-generated catch block
-				//e1.printStackTrace();
 				LOGGER.severe("Erreur lors de la lecture de l'image : "+fileURL);
 			}
          }
