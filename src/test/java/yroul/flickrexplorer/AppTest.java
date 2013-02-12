@@ -1,4 +1,4 @@
-package yroul.flickexplorer;
+package yroul.flickrexplorer;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
